@@ -1,0 +1,32 @@
+.meme__header {
+    background-color: wheat;
+    margin-bottom: 25px;
+}
+
+.meme__header--nav {
+    display: flex;
+}
+
+.meme__header--nav li {
+    display: inline;
+    align-items: center;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.meme__header--nav li a {
+    text-decoration: none;
+}
+
+.meme__header--nav__list {
+    margin-left: auto;
+    padding: 15px;
+}
+
+.meme__header--nav img {
+    height: 90px;
+    width: 90px;
+    margin: 5px;
+}
