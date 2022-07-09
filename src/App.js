@@ -9,9 +9,12 @@ function App() {
   const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
+    thiredText: "",
+    fourthText: "",
     textColor : "#000",
     textSizeTop: "25",
     textSizeBottom: "25",
+    addText: false,
     memeImage: "https://i.imgflip.com/30b1gx.jpg",
   })
 
@@ -40,6 +43,13 @@ function App() {
     setMeme(preMeme => ({
       ...preMeme,
       memeImage: url
+    }))
+  }
+
+  function moreText() {
+    setMeme(oldMeme => ({
+      ...oldMeme,
+      addText: true,
     }))
   }
 
@@ -129,6 +139,16 @@ function App() {
             value={meme.textSizeBottom}
             onChange={handelChange}
           />
+          {/*Handel this later adding more text areas conditionally */}
+          {/* {meme.addText && 
+                <textarea
+                  name="thiredText"
+                  value={meme.thiredText}
+                  placeholder="Meme top text"
+                  onChange={handelChange}
+                ></textarea>
+                 <button onClick={moreText}>Add Text</button>
+          } */}
 
           <button onClick={getMemeImage}>Generate Random Meme</button>
         </form>
