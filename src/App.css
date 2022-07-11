@@ -46,6 +46,7 @@ label {
 
 .meme__top-text, .meme__bottom-text {
     max-width: 501px;
+    white-space: pre-wrap;
 }
 
 .meme__form {
